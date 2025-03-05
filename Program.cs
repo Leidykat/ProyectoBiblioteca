@@ -21,9 +21,32 @@ lista_libros.Add(new Libros(){id=2, titulo="El señor de los anillos ", cantidad
 lista_libros.Add(new Libros(){id=3, titulo="Calculo integral", cantidad=5, estado="No disponible", año_publicacion="2016",id_editoriales=3, _id_editoriales=lista_editoriales.FirstOrDefault(x=>x.id==3)});
 lista_libros.Add(new Libros(){id=4, titulo="Física de campos ", cantidad=7, estado="Disponible", año_publicacion="2021",id_editoriales=4, _id_editoriales=lista_editoriales.FirstOrDefault(x=>x.id==4)});
 
+var lista_autores = new List<Autores>();
+lista_autores.Add(new Autores(){id=1, nombre="Joanne", apellido ="Rowling" });
+lista_autores.Add(new Autores(){id=2, nombre="John Ronald", apellido ="Tolkien" });
+lista_autores.Add(new Autores(){id=3, nombre="Juan Pablo", apellido ="Cardona" });
+lista_autores.Add(new Autores(){id=4, nombre="Juan Camilo", apellido ="Vasquez" });
+lista_autores.Add(new Autores(){id=5, nombre="Eugenio", apellido ="Giraldo" });
+
+var lista_roles = new List<Roles>();
+lista_roles.Add(new Roles(){id=1, nombre="Estudiante", descripcion ="Estudiante de la organición" });
+lista_roles.Add(new Roles(){id=2, nombre="Personal Administrativo", descripcion ="Personal administrativo que trabaja en la organización" });
+lista_roles.Add(new Roles(){id=3, nombre="Docente", descripcion ="Docente que trabaja en la organización" });
+
+var lista_usuarios = new List<Usuarios>();
+lista_usuarios.Add(new Usuarios(){id = 1, nombre = "Ramiro", apellido = "Sanchez", correo = "ramiro123@gmail.com", telefono = "12345", id_roles = 1, _id_roles = lista_roles.FirstOrDefault(x => x.id == 1)});
+lista_usuarios.Add(new Usuarios(){id = 2, nombre = "Isabela", apellido = "Perez", correo = "Isabelita@gmail.com", telefono = "67890", id_roles = 2, _id_roles = lista_roles.FirstOrDefault(x => x.id == 2)});
+lista_usuarios.Add(new Usuarios(){id = 3, nombre = "Camilo", apellido = "Diaz", correo = "Cam89u76@hotmail.com", telefono = "13579", id_roles = 3, _id_roles = lista_roles.FirstOrDefault(x => x.id == 3)});
+
+
+
 Console.WriteLine(lista_editoriales.Count);
 Console.WriteLine(lista_generos.Count);
-Console.WriteLine(lista_editoriales.Count);
+Console.WriteLine(lista_libros.Count);
+Console.WriteLine(lista_autores.Count);
+Console.WriteLine(lista_roles.Count);
+Console.WriteLine(lista_usuarios.Count);
+
 
 
 
@@ -60,7 +83,7 @@ public class Roles  // Hace parte de la información del Usuario y el admi asign
 
     public int id {get; set;} // identificador del rol del usuario 
     public string? nombre {get; set;} // información del rol
-    public string? descripción {get; set;} // información del rol, este atriburo se agrego para la entrega dos 
+    public string? descripcion {get; set;} // información del rol, este atriburo se agrego para la entrega dos 
     public List<Usuarios>? Usuarios {get; set;}
 }
 
