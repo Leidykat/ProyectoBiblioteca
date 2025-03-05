@@ -39,12 +39,15 @@ lista_usuarios.Add(new Usuarios(){id = 2, nombre = "Isabela", apellido = "Perez"
 lista_usuarios.Add(new Usuarios(){id = 3, nombre = "Camilo", apellido = "Diaz", correo = "Cam89u76@hotmail.com", telefono = "13579", id_roles = 3, _id_roles = lista_roles.FirstOrDefault(x => x.id == 3)});
 
 
+
 Console.WriteLine(lista_editoriales.Count);
 Console.WriteLine(lista_generos.Count);
+Console.WriteLine(lista_libros.Count);
 Console.WriteLine(lista_autores.Count);
 Console.WriteLine(lista_roles.Count);
 Console.WriteLine(lista_usuarios.Count);
-Console.WriteLine(lista_libros.Count);
+
+
 
 
 public class Editoriales // Hace parte de la información del libro y el admi ingresa los datos de la editorial 
@@ -80,7 +83,7 @@ public class Roles  // Hace parte de la información del Usuario y el admi asign
 
     public int id {get; set;} // identificador del rol del usuario 
     public string? nombre {get; set;} // información del rol
-    public string? descripción {get; set;} // información del rol, este atriburo se agrego para la entrega dos 
+    public string? descripcion {get; set;} // información del rol, este atriburo se agrego para la entrega dos 
     public List<Usuarios>? Usuarios {get; set;}
 }
 
@@ -162,6 +165,20 @@ public class Usuarios   // contiene la información del usuario y el admi ingres
     public Roles? _id_roles {get; set;} // identificar del rol 
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
