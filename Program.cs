@@ -121,6 +121,18 @@ public class Usuarios   // contiene la información del usuario y el admi ingres
     
 }
 
+///borrar mas tarde solo es un intento a ver que pasa 
+public class Intento  // entidad que relaciona la entidad libros y la entidad autores
+{
+
+    public int id {get; set;} // identificador del autor del libro 
+    public int id_libros {get; set;} // Relación real
+    public int id_autores {get; set;} // Relación real
+    public Libros? _id_libros {get; set;} // identificador del libro 
+    public Autores? _id_autores {get; set;}  // identificador del prestamo 
+    
+}
+
 
 
 
