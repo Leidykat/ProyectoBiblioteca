@@ -1,5 +1,10 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
+var lista_editoriales = new List<Editoriales>();
+lista_editoriales.Add(new Editoriales(){id=1, nombre="Bloomsbury", correo = "bloomsbury@gmail.com" });
+lista_editoriales.Add(new Editoriales(){id=2, nombre="Minotauro", correo = "minotauro@gmail.com" });
+lista_editoriales.Add(new Editoriales(){id=3, nombre="Ediciones de la U", correo = "edicionesdelau@gmail.com" });
+lista_editoriales.Add(new Editoriales(){id=4, nombre="Fondo Editorial EIA", correo = "fondoedeia@gmail.com" });
 
 
 public class Editoriales // Hace parte de la información del libro y el admi ingresa los datos de la editorial 
