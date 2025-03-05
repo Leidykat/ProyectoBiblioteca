@@ -69,7 +69,8 @@ public class Prestamos_Libros  // entidad que relaciona la entidad prestamos y l
 
     public int id {get; set;} // identificador del prestamo del libro  
     public DateTime fecha_devolucion {get; set;} // fecha de entrega del libro 
-    public Libros? id_libros {get; set;} // identificador del libro 
+     public int id_libros {get; set;}
+    public Libros? _id_libros {get; set;} // identificador del libro 
     public Prestamos? id_prestamos {get; set;}  // identificador del prestamo 
     
 }
@@ -87,8 +88,8 @@ public class Libros_Generos  // entidad que relaciona la entidad libros y la ent
 {
 
     public int id {get; set;} // identificador del genero del libro 
-    public Libros? id_libros {get; set;} // identificador del libro 
-    public Generos? id_generos {get; set;}  // identificador del genero 
+    public Libros? _id_libros {get; set;} // identificador del libro 
+    public Generos? _id_generos {get; set;}  // identificador del genero 
     
 }
 
@@ -101,7 +102,8 @@ public class Usuarios   // contiene la información del usuario y el admi ingres
     public string? apellido {get; set;} // información del usuario 
     public string? correo {get; set;} // información de contacto del usuario 
     public string? telefono {get; set;} // información de contacto del usuario 
-    public Roles? id_roles {get; set;} // identificar del rol 
+    public int id_roles {get; set;}
+    public Roles? _id_roles {get; set;} // identificar del rol 
     
 }
 

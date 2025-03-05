@@ -12,3 +12,18 @@ C:\Users\LENOVO\Desktop\Desarrollo\5 semestre\Desarrollo\Proyecto\Entrega2\obj\D
 C:\Users\LENOVO\Desktop\Desarrollo\5 semestre\Desarrollo\Proyecto\Entrega2\obj\Debug\net8.0\Entrega2.pdb
 C:\Users\LENOVO\Desktop\Desarrollo\5 semestre\Desarrollo\Proyecto\Entrega2\obj\Debug\net8.0\Entrega2.genruntimeconfig.cache
 C:\Users\LENOVO\Desktop\Desarrollo\5 semestre\Desarrollo\Proyecto\Entrega2\obj\Debug\net8.0\ref\Entrega2.dll
+C:\Users\salak401\Desktop\Proyecto\ProyectoBiblioteca\bin\Debug\net8.0\Entrega2.exe
+C:\Users\salak401\Desktop\Proyecto\ProyectoBiblioteca\bin\Debug\net8.0\Entrega2.deps.json
+C:\Users\salak401\Desktop\Proyecto\ProyectoBiblioteca\bin\Debug\net8.0\Entrega2.runtimeconfig.json
+C:\Users\salak401\Desktop\Proyecto\ProyectoBiblioteca\bin\Debug\net8.0\Entrega2.dll
+C:\Users\salak401\Desktop\Proyecto\ProyectoBiblioteca\bin\Debug\net8.0\Entrega2.pdb
+C:\Users\salak401\Desktop\Proyecto\ProyectoBiblioteca\obj\Debug\net8.0\Entrega2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\salak401\Desktop\Proyecto\ProyectoBiblioteca\obj\Debug\net8.0\Entrega2.AssemblyInfoInputs.cache
+C:\Users\salak401\Desktop\Proyecto\ProyectoBiblioteca\obj\Debug\net8.0\Entrega2.AssemblyInfo.cs
+C:\Users\salak401\Desktop\Proyecto\ProyectoBiblioteca\obj\Debug\net8.0\Entrega2.csproj.CoreCompileInputs.cache
+C:\Users\salak401\Desktop\Proyecto\ProyectoBiblioteca\obj\Debug\net8.0\Entrega2.sourcelink.json
+C:\Users\salak401\Desktop\Proyecto\ProyectoBiblioteca\obj\Debug\net8.0\Entrega2.dll
+C:\Users\salak401\Desktop\Proyecto\ProyectoBiblioteca\obj\Debug\net8.0\refint\Entrega2.dll
+C:\Users\salak401\Desktop\Proyecto\ProyectoBiblioteca\obj\Debug\net8.0\Entrega2.pdb
+C:\Users\salak401\Desktop\Proyecto\ProyectoBiblioteca\obj\Debug\net8.0\Entrega2.genruntimeconfig.cache
+C:\Users\salak401\Desktop\Proyecto\ProyectoBiblioteca\obj\Debug\net8.0\ref\Entrega2.dll
