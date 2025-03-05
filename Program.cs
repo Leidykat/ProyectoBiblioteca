@@ -8,7 +8,7 @@ public class Editoriales // Hace parte de la información del libro y el admi in
     public int id {get; set;} // identificador de la editorial 
     public string? nombre {get; set;} // información de la editorial 
     public string? correo {get; set;} // información de la editorial, este atriburo se agrego para la entrega dos 
-   
+    public List<Libros>? Libros {get; set;}
 }
 
 public class Generos  // Hace parte de la información del libro y el admi ingresa los datos del genero del libro  
@@ -17,6 +17,7 @@ public class Generos  // Hace parte de la información del libro y el admi ingre
     public int id {get; set;}// identificador del genero
     public string? nombre {get; set;} // información del genero
     public string? descripción {get; set;} // información del genero, este atriburo se agrego para la entrega dos 
+    public List<Libros_Generos>? Libros_Generos {get; set;}
 }
 
 public class Autores  // Hace parte de la información del libro y el admi ingresa los datos del Autor del libro 
@@ -25,6 +26,7 @@ public class Autores  // Hace parte de la información del libro y el admi ingre
     public int id {get; set;}// identificador del autor 
     public string? nombre {get; set;} // información del autor    
     public string? apellido {get; set;} // información del autor
+    public List<Libros_Autores>? Libros_Autores {get; set;}
     
 }
 
@@ -34,7 +36,7 @@ public class Roles  // Hace parte de la información del Usuario y el admi asign
     public int id {get; set;} // identificador del rol del usuario 
     public string? nombre {get; set;} // información del rol
     public string? descripción {get; set;} // información del rol, este atriburo se agrego para la entrega dos 
-    
+    public List<Usuarios>? Usuarios {get; set;}
 }
 
 public class Prestamos  // contiene la información del prestamo y el admi ingresa los datos 
@@ -46,6 +48,8 @@ public class Prestamos  // contiene la información del prestamo y el admi ingre
     public DateTime fecha_devolucion {get; set;} // fecha en la que se debe entregar el libro 
     public int id_usuarios {get; set;} // Relación real
     public Usuarios? _id_usuarios {get; set;} // identificador de usuarios 
+    public List<Usuarios>? Usuarios {get; set;}
+    public List<Prestamos_Libros>? Prestamos_Libros {get; set;}
 
 }
 
@@ -60,6 +64,11 @@ public class Libros  // contiene la información del libro y el admi ingresa los
     public DateTime año_publicacion {get; set;} // fecha en la que se publico el libro DUDA SI PONER DATETIME 
     public int id_editoriales {get; set;} // Relación real
     public Editoriales? _id_editoriales {get; set;}  // identificador de la editorial 
+    public List<Libros_Generos>? Libros_Generos {get; set;}
+    public List<Libros_Autores>? Libros_Autores {get; set;}
+    public List<Prestamos_Libros>? Prestamos_Libros {get; set;}
+
+}
 
 }
 
