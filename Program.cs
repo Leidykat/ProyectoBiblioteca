@@ -70,9 +70,6 @@ public class Libros  // contiene la información del libro y el admi ingresa los
 
 }
 
-}
-
-
 public class Prestamos_Libros  // entidad que relaciona la entidad prestamos y la entidad libros, además tiene la fecha en la que se entrega el libro 
 {
 
@@ -121,17 +118,6 @@ public class Usuarios   // contiene la información del usuario y el admi ingres
     
 }
 
-///borrar mas tarde solo es un intento a ver que pasa 
-public class Intento  // entidad que relaciona la entidad libros y la entidad autores
-{
-
-    public int id {get; set;} // identificador del autor del libro 
-    public int id_libros {get; set;} // Relación real
-    public int id_autores {get; set;} // Relación real
-    public Libros? _id_libros {get; set;} // identificador del libro 
-    public Autores? _id_autores {get; set;}  // identificador del prestamo 
-    
-}
 
 
 
