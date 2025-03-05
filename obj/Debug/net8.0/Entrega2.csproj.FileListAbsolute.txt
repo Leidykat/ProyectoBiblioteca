@@ -1,0 +1,14 @@
+C:\Users\LENOVO\Desktop\Desarrollo\5 semestre\Desarrollo\Proyecto\Entrega2\bin\Debug\net8.0\Entrega2.exe
+C:\Users\LENOVO\Desktop\Desarrollo\5 semestre\Desarrollo\Proyecto\Entrega2\bin\Debug\net8.0\Entrega2.deps.json
+C:\Users\LENOVO\Desktop\Desarrollo\5 semestre\Desarrollo\Proyecto\Entrega2\bin\Debug\net8.0\Entrega2.runtimeconfig.json
+C:\Users\LENOVO\Desktop\Desarrollo\5 semestre\Desarrollo\Proyecto\Entrega2\bin\Debug\net8.0\Entrega2.dll
+C:\Users\LENOVO\Desktop\Desarrollo\5 semestre\Desarrollo\Proyecto\Entrega2\bin\Debug\net8.0\Entrega2.pdb
+C:\Users\LENOVO\Desktop\Desarrollo\5 semestre\Desarrollo\Proyecto\Entrega2\obj\Debug\net8.0\Entrega2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\Desktop\Desarrollo\5 semestre\Desarrollo\Proyecto\Entrega2\obj\Debug\net8.0\Entrega2.AssemblyInfoInputs.cache
+C:\Users\LENOVO\Desktop\Desarrollo\5 semestre\Desarrollo\Proyecto\Entrega2\obj\Debug\net8.0\Entrega2.AssemblyInfo.cs
+C:\Users\LENOVO\Desktop\Desarrollo\5 semestre\Desarrollo\Proyecto\Entrega2\obj\Debug\net8.0\Entrega2.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Desktop\Desarrollo\5 semestre\Desarrollo\Proyecto\Entrega2\obj\Debug\net8.0\Entrega2.dll
+C:\Users\LENOVO\Desktop\Desarrollo\5 semestre\Desarrollo\Proyecto\Entrega2\obj\Debug\net8.0\refint\Entrega2.dll
+C:\Users\LENOVO\Desktop\Desarrollo\5 semestre\Desarrollo\Proyecto\Entrega2\obj\Debug\net8.0\Entrega2.pdb
+C:\Users\LENOVO\Desktop\Desarrollo\5 semestre\Desarrollo\Proyecto\Entrega2\obj\Debug\net8.0\Entrega2.genruntimeconfig.cache
+C:\Users\LENOVO\Desktop\Desarrollo\5 semestre\Desarrollo\Proyecto\Entrega2\obj\Debug\net8.0\ref\Entrega2.dll
