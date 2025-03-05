@@ -23,8 +23,7 @@ public class Autores  // Hace parte de la información del libro y el admi ingre
 {
 
     public int id {get; set;}// identificador del autor 
-    public string? nombre {get; set;} // información del autor
-    
+    public string? nombre {get; set;} // información del autor    
     public string? apellido {get; set;} // información del autor
     
 }
@@ -42,11 +41,11 @@ public class Prestamos  // contiene la información del prestamo y el admi ingre
 {
 
     public int id {get; set;} // identificador del prestamo 
-
     public string? codigo {get; set;} // identificador del DUDDDDDDAAAA
     public DateTime fecha_prestamo {get; set;} // fecha en la que se realizo el prestamo 
     public DateTime fecha_devolucion {get; set;} // fecha en la que se debe entregar el libro 
-    public Usuarios? id_usuarios {get; set;} // identificador de usuarios 
+    public int id_usuarios {get; set;} // Relación real
+    public Usuarios? _id_usuarios {get; set;} // identificador de usuarios 
 
 }
 
@@ -59,7 +58,8 @@ public class Libros  // contiene la información del libro y el admi ingresa los
     public int cantidad {get; set;} // cantidad de libros que hay disponibles
     public Boolean estado {get; set;} // si el libro se encuentra o no disponible 
     public DateTime año_publicacion {get; set;} // fecha en la que se publico el libro DUDA SI PONER DATETIME 
-    public Editoriales? id_editores {get; set;}  // identificador de la editorial 
+    public int id_editoriales {get; set;} // Relación real
+    public Editoriales? _id_editoriales {get; set;}  // identificador de la editorial 
 
 }
 
@@ -69,9 +69,10 @@ public class Prestamos_Libros  // entidad que relaciona la entidad prestamos y l
 
     public int id {get; set;} // identificador del prestamo del libro  
     public DateTime fecha_devolucion {get; set;} // fecha de entrega del libro 
-     public int id_libros {get; set;}
+    public int id_libros {get; set;} // Relación real
+    public int id_prestamos {get; set;} // Relación real
     public Libros? _id_libros {get; set;} // identificador del libro 
-    public Prestamos? id_prestamos {get; set;}  // identificador del prestamo 
+    public Prestamos? _id_prestamos {get; set;}  // identificador del prestamo 
     
 }
 
@@ -79,8 +80,10 @@ public class Libros_Autores  // entidad que relaciona la entidad libros y la ent
 {
 
     public int id {get; set;} // identificador del autor del libro 
-    public Libros? id_libros {get; set;} // identificador del libro 
-    public Autores? id_Autores {get; set;}  // identificador del prestamo 
+    public int id_libros {get; set;} // Relación real
+    public int id_autores {get; set;} // Relación real
+    public Libros? _id_libros {get; set;} // identificador del libro 
+    public Autores? _id_autores {get; set;}  // identificador del prestamo 
     
 }
 
@@ -88,6 +91,8 @@ public class Libros_Generos  // entidad que relaciona la entidad libros y la ent
 {
 
     public int id {get; set;} // identificador del genero del libro 
+    public int id_libros {get; set;}
+    public int id_generos {get; set;}
     public Libros? _id_libros {get; set;} // identificador del libro 
     public Generos? _id_generos {get; set;}  // identificador del genero 
     
@@ -102,7 +107,7 @@ public class Usuarios   // contiene la información del usuario y el admi ingres
     public string? apellido {get; set;} // información del usuario 
     public string? correo {get; set;} // información de contacto del usuario 
     public string? telefono {get; set;} // información de contacto del usuario 
-    public int id_roles {get; set;}
+    public int id_roles {get; set;} // Relación real
     public Roles? _id_roles {get; set;} // identificar del rol 
     
 }
