@@ -6,6 +6,26 @@ lista_editoriales.Add(new Editoriales(){id=2, nombre="Minotauro", correo = "mino
 lista_editoriales.Add(new Editoriales(){id=3, nombre="Ediciones de la U", correo = "edicionesdelau@gmail.com" });
 lista_editoriales.Add(new Editoriales(){id=4, nombre="Fondo Editorial EIA", correo = "fondoedeia@gmail.com" });
 
+var lista_generos = new List<Generos>();
+lista_generos.Add(new Generos(){id=1, nombre="Acción", descripción="Género lleno de emociones, enfrentamientos y desafíos intensos"});
+lista_generos.Add(new Generos(){id=2, nombre="Fantasía", descripción="Mundo imaginario con magia, criaturas y aventuras sobrenaturales"});
+lista_generos.Add(new Generos(){id=3, nombre="Misterio", descripción="Historia centrada en resolver enigmas o crímenes"});
+lista_generos.Add(new Generos(){id=4, nombre="Aventura", descripción="Viajes y exploraciones con riesgos y descubrimientos"});
+lista_generos.Add(new Generos(){id=5, nombre="Mitología", descripción="Relatos sobre dioses, héroes y criaturas míticas"});
+lista_generos.Add(new Generos(){id=6, nombre="Epica", descripción="Grandes batallas y héroes luchando por causas nobles"});
+lista_generos.Add(new Generos(){id=7, nombre="Académico", descripción="Estudio y análisis detallado de temas específicos"});
+
+var lista_libros = new List<Libros>();
+lista_libros.Add(new Libros(){id=1, titulo="Harry Potter y el prisionero de Azkaban", cantidad=8, estado= "Disponible", año_publicacion= "1999", id_editoriales=1, _id_editoriales=lista_editoriales.FirstOrDefault(x=>x.id==1)});
+lista_libros.Add(new Libros(){id=2, titulo="El señor de los anillos ", cantidad=4, estado="Disponible", año_publicacion="1054",id_editoriales=2, _id_editoriales=lista_editoriales.FirstOrDefault(x=>x.id==2)});
+lista_libros.Add(new Libros(){id=3, titulo="Calculo integral", cantidad=5, estado="No disponible", año_publicacion="2016",id_editoriales=3, _id_editoriales=lista_editoriales.FirstOrDefault(x=>x.id==3)});
+lista_libros.Add(new Libros(){id=4, titulo="Física de campos ", cantidad=7, estado="Disponible", año_publicacion="2021",id_editoriales=4, _id_editoriales=lista_editoriales.FirstOrDefault(x=>x.id==4)});
+
+Console.WriteLine(lista_editoriales.Count);
+Console.WriteLine(lista_generos.Count);
+Console.WriteLine(lista_editoriales.Count);
+
+
 
 public class Editoriales // Hace parte de la información del libro y el admi ingresa los datos de la editorial 
 {
@@ -65,8 +85,8 @@ public class Libros  // contiene la información del libro y el admi ingresa los
     public int id {get; set;} // identificador del libro 
     public string? titulo {get; set;} // Nombre del libro 
     public int cantidad {get; set;} // cantidad de libros que hay disponibles
-    public Boolean estado {get; set;} // si el libro se encuentra o no disponible 
-    public DateTime año_publicacion {get; set;} // fecha en la que se publico el libro DUDA SI PONER DATETIME 
+    public string? estado {get; set;} // si el libro se encuentra o no disponible 
+    public string? año_publicacion {get; set;} // Año en la que se publico el libro DUDA SI PONER DATETIME 
     public int id_editoriales {get; set;} // Relación real
     public Editoriales? _id_editoriales {get; set;}  // identificador de la editorial 
     public List<Libros_Generos>? Libros_Generos {get; set;}
