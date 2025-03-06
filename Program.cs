@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
+
 var lista_editoriales = new List<Editoriales>();
 lista_editoriales.Add(new Editoriales(){id=1, nombre="Bloomsbury", correo = "bloomsbury@gmail.com" });
 lista_editoriales.Add(new Editoriales(){id=2, nombre="Minotauro", correo = "minotauro@gmail.com" });
@@ -38,6 +39,69 @@ lista_usuarios.Add(new Usuarios(){id = 1, nombre = "Ramiro", apellido = "Sanchez
 lista_usuarios.Add(new Usuarios(){id = 2, nombre = "Isabela", apellido = "Perez", correo = "Isabelita@gmail.com", telefono = "67890", id_roles = 2, _id_roles = lista_roles.FirstOrDefault(x => x.id == 2)});
 lista_usuarios.Add(new Usuarios(){id = 3, nombre = "Camilo", apellido = "Diaz", correo = "Cam89u76@hotmail.com", telefono = "13579", id_roles = 3, _id_roles = lista_roles.FirstOrDefault(x => x.id == 3)});
 
+var lista_libros_autores = new List<Libros_Autores>();
+lista_libros_autores.Add(new Libros_Autores(){id = 1, id_libros = 1, id_autores = 1, _id_libros = lista_libros.FirstOrDefault(x => x.id == 1)});
+lista_libros_autores.Add(new Libros_Autores(){id = 2, id_libros = 2, id_autores = 2, _id_libros = lista_libros.FirstOrDefault(x => x.id == 2)});
+lista_libros_autores.Add(new Libros_Autores(){id = 3, id_libros = 3, id_autores = 3, _id_libros = lista_libros.FirstOrDefault(x => x.id == 3)});
+lista_libros_autores.Add(new Libros_Autores(){id = 4, id_libros = 3, id_autores = 4, _id_libros = lista_libros.FirstOrDefault(x => x.id == 4)});
+lista_libros_autores.Add(new Libros_Autores(){id = 5, id_libros = 4, id_autores = 5, _id_libros = lista_libros.FirstOrDefault(x => x.id == 5)});
+
+var lista_libros_generos = new List<Libros_Generos>();
+lista_libros_generos.Add(new Libros_Generos(){
+    id = 1, 
+    id_libros = 1, 
+    id_generos = 1, 
+    _id_libros = lista_libros.FirstOrDefault(x => x.id == 1), 
+    _id_generos = lista_generos.FirstOrDefault(x => x.id == 1)});
+
+lista_libros_generos.Add(new Libros_Generos(){
+    id = 2, 
+    id_libros = 1, 
+    id_generos = 2, 
+    _id_libros = lista_libros.FirstOrDefault(x => x.id == 1), 
+    _id_generos = lista_generos.FirstOrDefault(x => x.id == 2)});
+
+lista_libros_generos.Add(new Libros_Generos(){
+    id = 3, 
+    id_libros = 1, 
+    id_generos = 3, 
+    _id_libros = lista_libros.FirstOrDefault(x => x.id == 1), 
+    _id_generos = lista_generos.FirstOrDefault(x => x.id == 3)});
+
+lista_libros_generos.Add(new Libros_Generos(){
+    id = 4, 
+    id_libros = 2, 
+    id_generos = 4, 
+    _id_libros = lista_libros.FirstOrDefault(x => x.id == 2), 
+    _id_generos = lista_generos.FirstOrDefault(x => x.id == 4)});
+
+lista_libros_generos.Add(new Libros_Generos(){
+    id = 5, 
+    id_libros = 2, 
+    id_generos = 5, 
+    _id_libros = lista_libros.FirstOrDefault(x => x.id == 2), 
+    _id_generos = lista_generos.FirstOrDefault(x => x.id == 5)});
+
+lista_libros_generos.Add(new Libros_Generos(){
+    id = 6, 
+    id_libros = 2, 
+    id_generos = 6, 
+    _id_libros = lista_libros.FirstOrDefault(x => x.id == 2), 
+    _id_generos = lista_generos.FirstOrDefault(x => x.id == 6)});
+
+lista_libros_generos.Add(new Libros_Generos(){
+    id = 7, 
+    id_libros = 3, 
+    id_generos = 7, 
+    _id_libros = lista_libros.FirstOrDefault(x => x.id == 3), 
+    _id_generos = lista_generos.FirstOrDefault(x => x.id == 7)});
+
+lista_libros_generos.Add(new Libros_Generos(){
+    id = 8, 
+    id_libros = 4, 
+    id_generos = 7, 
+    _id_libros = lista_libros.FirstOrDefault(x => x.id == 4), 
+    _id_generos = lista_generos.FirstOrDefault(x => x.id == 7)});
 
 
 Console.WriteLine(lista_editoriales.Count);
@@ -46,7 +110,8 @@ Console.WriteLine(lista_libros.Count);
 Console.WriteLine(lista_autores.Count);
 Console.WriteLine(lista_roles.Count);
 Console.WriteLine(lista_usuarios.Count);
-
+Console.WriteLine(lista_libros_autores.Count);
+Console.WriteLine(lista_libros_generos.Count);
 
 
 
@@ -165,26 +230,3 @@ public class Usuarios   // contiene la información del usuario y el admi ingres
     public Roles? _id_roles {get; set;} // identificar del rol 
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

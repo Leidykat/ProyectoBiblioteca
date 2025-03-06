@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LENOVO\\Desktop\\Desarrollo\\5 semestre\\Desarrollo\\Proyecto\\COPIA\\ProyectoBiblioteca\\Entrega2.csproj": {}
+    "E:\\U\\Programación 2025-1\\Proyecto\\ProyectoBiblioteca\\Entrega2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LENOVO\\Desktop\\Desarrollo\\5 semestre\\Desarrollo\\Proyecto\\COPIA\\ProyectoBiblioteca\\Entrega2.csproj": {
+    "E:\\U\\Programación 2025-1\\Proyecto\\ProyectoBiblioteca\\Entrega2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LENOVO\\Desktop\\Desarrollo\\5 semestre\\Desarrollo\\Proyecto\\COPIA\\ProyectoBiblioteca\\Entrega2.csproj",
+        "projectUniqueName": "E:\\U\\Programación 2025-1\\Proyecto\\ProyectoBiblioteca\\Entrega2.csproj",
         "projectName": "Entrega2",
-        "projectPath": "C:\\Users\\LENOVO\\Desktop\\Desarrollo\\5 semestre\\Desarrollo\\Proyecto\\COPIA\\ProyectoBiblioteca\\Entrega2.csproj",
-        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LENOVO\\Desktop\\Desarrollo\\5 semestre\\Desarrollo\\Proyecto\\COPIA\\ProyectoBiblioteca\\obj\\",
+        "projectPath": "E:\\U\\Programación 2025-1\\Proyecto\\ProyectoBiblioteca\\Entrega2.csproj",
+        "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
+        "outputPath": "E:\\U\\Programación 2025-1\\Proyecto\\ProyectoBiblioteca\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
