@@ -1,5 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
+
 using System.ComponentModel;
+
+
+Console.WriteLine("Hello, World!");
 
 
 var lista_editoriales = new List<Editoriales>();
@@ -196,14 +200,5 @@ public class Usuarios
     public string? telefono {get; set;}  
     public int id_roles {get; set;} 
     public Roles? _id_roles {get; set;} 
-    
 }
-
-
-
-
-
-
-
-
-
+    
